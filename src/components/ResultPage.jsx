@@ -64,7 +64,7 @@ const ResultPage = () => {
       </div>
       {currentStep > eliminationOrder.length && (
         <div style={styles.finalResult}>
-          <h2>Final Relationship: {finalResult}</h2>
+          <h2>Final Relationship: {fullWordResult}</h2>
           <p style={styles.descriptionText}>
             {descriptions[fullWordResult] || "No description available for this result."}
           </p>
