@@ -25,13 +25,13 @@ const HomePage = () => {
             className="p-2 border rounded w-full"
             value={name1}
             onChange={(e) => setName1(e.target.value)}
-            placeholder="Your Name"
+            placeholder="Your Name 🥰"
           />
           <input
             className="p-2 border rounded w-full"
             value={name2}
             onChange={(e) => setName2(e.target.value)}
-            placeholder="Your crush's name!!"
+            placeholder="Your crush's name!! 💘"
           />
           <button
             className="bg-pink-500 text-white px-4 py-2 rounded w-full"
