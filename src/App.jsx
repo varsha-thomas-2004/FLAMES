@@ -9,7 +9,9 @@ const HomePage = () => {
 
   const handleCalculate = () => {
     if (name1 && name2) {
-      navigate(`/result?name1=${encodeURIComponent(name1)}&name2=${encodeURIComponent(name2)}`);
+      navigate(
+        `/result?name1=${encodeURIComponent(name1)}&name2=${encodeURIComponent(name2)}`
+      );
     }
   };
 
@@ -17,9 +19,35 @@ const HomePage = () => {
     <div className="flex items-center justify-center min-h-screen bg-[#FDDCDC]">
       <div className="flex flex-col items-center text-center p-8 rounded-2xl shadow-xl w-96">
         <h1 className="text-pink-600 text-3xl font-bold">FLAMES</h1>
-        <input className="my-2 p-2 border rounded" value={name1} onChange={(e) => setName1(e.target.value)} placeholder="Your Name 🥰" />
-        <input className="my-2 p-2 border rounded" value={name2} onChange={(e) => setName2(e.target.value)} placeholder="Crush's Name 💘" />
-        <button className="bg-pink-500 text-white px-4 py-2 rounded" onClick={handleCalculate}>Calculate</button>
+        {/* Container for input fields and calculate button */}
+        <div className="flex flex-col space-y-4 w-full mt-4">
+          <input
+            className="p-2 border rounded w-full"
+            value={name1}
+            onChange={(e) => setName1(e.target.value)}
+            placeholder="Your Name"
+          />
+          <input
+            className="p-2 border rounded w-full"
+            value={name2}
+            onChange={(e) => setName2(e.target.value)}
+            placeholder="Your crush's name!!"
+          />
+          <button
+            className="bg-pink-500 text-white px-4 py-2 rounded w-full"
+            onClick={handleCalculate}
+          >
+            Calculate
+          </button>
+        </div>
+        <div className="my-4">
+          <p className="text-gray-700 text-center text-7xl font-bold">
+            Enter two names and unlock the fiery secrets of your fate! Will it be passion, friendship, or an unbreakable bond?
+          </p>
+          <p className="text-gray-700 text-center text-7xl font-bold mt-4">
+            Dare to discover what destiny has written for you!!!
+          </p>
+        </div>
       </div>
     </div>
   );
@@ -35,5 +63,3 @@ export default function App() {
     </Router>
   );
 }
-
-
