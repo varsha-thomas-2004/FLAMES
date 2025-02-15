@@ -19,7 +19,8 @@ const HomePage = () => {
     <div className="flex items-center justify-center min-h-screen bg-[#FDDCDC]">
       <div className="flex flex-col items-center text-center p-8 rounded-2xl shadow-xl w-96">
         <h1 className="text-pink-600 text-3xl font-bold">FLAMES</h1>
-        {/* Container for input fields and calculate button */}
+        
+        {/* Container for input fields and button */}
         <div className="flex flex-col space-y-4 w-full mt-4">
           <input
             className="p-2 border rounded w-full"
@@ -33,18 +34,24 @@ const HomePage = () => {
             onChange={(e) => setName2(e.target.value)}
             placeholder="Your crush's name!! 💘"
           />
-          <button
-            className="bg-pink-500 text-white px-4 py-2 rounded w-full"
-            onClick={handleCalculate}
-          >
-            Calculate
-          </button>
+          
+          {/* Centered Button */}
+          <div className="flex justify-center w-full">
+            <button
+              className="bg-pink-500 text-white px-4 py-2 rounded w-40"
+              onClick={handleCalculate}
+            >
+              Calculate
+            </button>
+          </div>
         </div>
+
+        {/* Text Section */}
         <div className="my-4">
-          <p className="text-gray-700 text-center text-7xl font-bold">
+          <p className="text-gray-700 text-center text-xl font-bold">
             Enter two names and unlock the fiery secrets of your fate! Will it be passion, friendship, or an unbreakable bond?
           </p>
-          <p className="text-gray-700 text-center text-7xl font-bold mt-4">
+          <p className="text-gray-700 text-center text-xl font-bold mt-4">
             Dare to discover what destiny has written for you!!!
           </p>
         </div>
