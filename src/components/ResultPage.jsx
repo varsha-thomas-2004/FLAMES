@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
-import { getFlamesEliminationOrder } from "../logic/flamesLogic";
+import { getFlamesEliminationOrder } from "../logic/flameslogic";
 
 const ResultPage = () => {
   const [searchParams] = useSearchParams();

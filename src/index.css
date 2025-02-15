@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
 
-:root {
+/*:root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -76,4 +76,136 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+}*/
+/*
+body {
+  background-color: #ffd6d6;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 50px;
+  color: red;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #ff9ea8;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: #b05b66;
+  font-style: italic;
+}
+
+button {
+  background-color: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #d93c5f;
+}
+
+.heart-icon {
+  margin-right: 5px;
+}
+
+.relationship-desc {
+  font-size: 14px;
+  color: red;
+  margin-top: 10px;
+}*/
+
+body {
+  background-color: #ffd6d6;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 50px;
+  color: red;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 250px;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #ff9ea8;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+input::placeholder {
+  color: #b05b66;
+  font-style: italic;
+}
+
+button {
+  background-color: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px auto;
+  width: fit-content;
+}
+
+button:hover {
+  background-color: #d93c5f;
+  align-items: center;
+}
+
+.heart-icon {
+  margin-right: 5px;
+}
+
+.relationship-desc {
+  font-size: 14px;
+  color: red;
+  margin-top: 10px;
 }

@@ -17,8 +17,8 @@ const HomePage = () => {
     <div className="flex items-center justify-center min-h-screen bg-[#FDDCDC]">
       <div className="flex flex-col items-center text-center p-8 rounded-2xl shadow-xl w-96">
         <h1 className="text-pink-600 text-3xl font-bold">FLAMES</h1>
-        <input className="my-2 p-2 border rounded" value={name1} onChange={(e) => setName1(e.target.value)} placeholder="Your Name" />
-        <input className="my-2 p-2 border rounded" value={name2} onChange={(e) => setName2(e.target.value)} placeholder="Partner's Name" />
+        <input className="my-2 p-2 border rounded" value={name1} onChange={(e) => setName1(e.target.value)} placeholder="Your Name 🥰" />
+        <input className="my-2 p-2 border rounded" value={name2} onChange={(e) => setName2(e.target.value)} placeholder="Crush's Name 💘" />
         <button className="bg-pink-500 text-white px-4 py-2 rounded" onClick={handleCalculate}>Calculate</button>
       </div>
     </div>
